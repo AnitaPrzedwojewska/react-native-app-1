@@ -8,9 +8,12 @@ import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
-import { faPersonRunning } from '@fortawesome/free-solid-svg-icons/faPersonRunning'
-import { faPersonBiking } from '@fortawesome/free-solid-svg-icons/faPersonBiking'
-import { faPersonSwimming } from '@fortawesome/free-solid-svg-icons/faPersonSwimming'
+// import { faPersonRunning } from '@fortawesome/free-solid-svg-icons/faPersonRunning'
+// import { faPersonBiking } from '@fortawesome/free-solid-svg-icons/faPersonBiking'
+// import { faPersonSwimming } from '@fortawesome/free-solid-svg-icons/faPersonSwimming'
+import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
+import { faUser } from '@fortawesome/free-solid-svg-icons/faUser'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 // import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -37,27 +40,27 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => (
-            <FontAwesomeIcon icon={faPersonRunning} />
+            <FontAwesomeIcon icon={faHouse} />
             // <IconSymbol size={28} name="happy.fill" color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name='explore'
+        name='name'
         options={{
-          title: "Explore",
+          title: "Name",
           tabBarIcon: ({ color }) => (
-            <FontAwesomeIcon icon={faPersonSwimming} />
+            <FontAwesomeIcon icon={faUser} />
             // <IconSymbol size={28} name='paperplane.fill' color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name='my-tabs'
+        name='email'
         options={{
-          title: "My tabs",
+          title: "Email",
           tabBarIcon: ({ color }) => (
-            <FontAwesomeIcon icon={faPersonBiking} />
+            <FontAwesomeIcon icon={faEnvelope} />
             // <IconSymbol size={28} name='paperplane.fill' color={color} />
           ),
         }}
